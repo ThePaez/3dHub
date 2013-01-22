@@ -8,6 +8,10 @@
         <servlet-name>logout</servlet-name>
         <servlet-class>org.tdhub.servlets.logOut</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>valUser</servlet-name>
+        <servlet-class>org.tdhub.servlets.valUser</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>signUp</servlet-name>
         <url-pattern>/signup</url-pattern>
@@ -15,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>logout</servlet-name>
         <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>valUser</servlet-name>
+        <url-pattern>/validate</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

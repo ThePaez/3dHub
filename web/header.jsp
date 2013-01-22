@@ -15,9 +15,9 @@
             <%
               Boolean isSignedUp = (Boolean) session.getAttribute("isSignedUp");
               if(isSignedUp==null || !isSignedUp)
-                  out.println("<a href=\"signup\">Sign Up</a> or <a href=\"login\">Log In</a>");
+                  out.println("<button id=\"LoginButton\">Sign In</button>");
               else
-                  out.println("<a href=\"logout\">Log Out</a>");
+                  out.println("<button id=\"logoutButton\">Sign Out</button>");
                         %>
         </td>
         <!-- Button Links -->
@@ -38,3 +38,15 @@
         </td>
     </tr>
 </table>
+<div id="dialog-form" title="Create new user">
+	<p class="validateTips">All form fields are required.</p>
+
+	<form>
+	<fieldset>
+		<label for="name">Name</label>
+		<input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" />
+		<label for="password">Password</label>
+		<input type="password" name="password" id="password" value="" class="text ui-widget-content ui-corner-all" />
+	</fieldset>
+	</form>
+</div>
