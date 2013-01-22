@@ -12,6 +12,7 @@ function toHome(){
 
 $(function() {
     $( ".UpperButtons" ).button({
+        height:1
         });
     $( "#LoginButton" )
 			.button()
@@ -58,7 +59,7 @@ $(function() {
     $( "#dialog-form" ).dialog({
         autoOpen: false,
         height: 300,
-        width: 400,
+        width: 370,
         modal: true,
         buttons: {
             "Sign in": function() {

@@ -8,7 +8,7 @@
 <table width="100%">
     <tr>
         <td id="Logo" width="10%">
-            <img src=".\\Resources\\Images\\Logo.png" onclick="toHome()">
+            <img src="./Resources/Images/Logo.png" onclick="toHome()">
             <br/>
         </td>
         <td width="90%" style="text-align:right">
@@ -34,11 +34,11 @@
         <td width="10%">
             <button class="UpperButtons" value="About Us" name="About Us" action="uberuns">About Us</button>
         </td>
-        <td width="60%">
+        <td width="70%">
         </td>
     </tr>
 </table>
-<div id="dialog-form" title="Create new user">
+<div id="dialog-form" title="Sign In">
 	<p class="validateTips">All form fields are required.</p>
 
 	<form>
