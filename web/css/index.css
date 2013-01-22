@@ -6,7 +6,21 @@
         Purpose of the stylesheet follows.
 
 */
-#SignUpForm{
+.SignUpForm{
     font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
     font-size: 1.1em;
+}
+body{
+    color:#4000ff;
+}
+#Login{
+    background-color: #EfEf8f;
+    margin:0px;
+}
+#Propaganda{
+    background-color: #EfEf8f;
+    margin:0px;
+}
+#Username, #Email, #Password, #CPassword{
+    width:100%;
 }

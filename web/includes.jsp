@@ -8,6 +8,7 @@
         <script src="js/jquery-ui-1.10.0.custom.js"></script>
         <script src="js/header.js"></script>
         <link href="css/custom-theme/jquery-ui-1.10.0.custom.css" rel="stylesheet">
+        <link href="css/le-frog/jquery-ui-1.10.0.custom.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/header.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>3dHub</title>

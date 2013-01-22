@@ -5,13 +5,13 @@
 --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!-- LOGO -->
-<table width="100%">
+<table width="100%" class="backcolor" cellspacing="0">
     <tr>
         <td id="Logo" width="10%">
             <img src="./Resources/Images/Logo.png" onclick="toHome()">
             <br/>
         </td>
-        <td width="90%" style="text-align:right">
+        <td width="90%" style="text-align:right" class="mainTheme">
             <%
               Boolean isSignedUp = (Boolean) session.getAttribute("isSignedUp");
               if(isSignedUp==null || !isSignedUp)
@@ -23,8 +23,8 @@
         <!-- Button Links -->
     </tr>
 </table>
-<table width="100%">
-    <tr>
+<table width="100%" class="mainTheme" cellspacing="0">
+    <tr class="backcolor">
         <td width="10%">
             <button class="UpperButtons" value="Register" name="Register" action="reg">Register</button>
         </td>
@@ -38,7 +38,7 @@
         </td>
     </tr>
 </table>
-<div id="dialog-form" title="Sign In">
+<div class="mainTheme" id="dialog-form" title="Sign In">
 	<p class="validateTips">All form fields are required.</p>
 
 	<form>
@@ -50,3 +50,4 @@
 	</fieldset>
 	</form>
 </div>
+<hr color="Blue">

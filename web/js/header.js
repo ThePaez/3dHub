@@ -59,7 +59,7 @@ $(function() {
     $( "#dialog-form" ).dialog({
         autoOpen: false,
         height: 300,
-        width: 370,
+        width: 300,
         modal: true,
         buttons: {
             "Sign in": function() {
@@ -93,5 +93,6 @@ $(function() {
             allFields.val( "" ).removeClass( "ui-state-error" );
         }
     });
+    $("#dialog-form").dialog().parents(".ui-dialog:eq(0)").addClass("mainTheme");
 });
 

@@ -13,3 +13,14 @@ root {
     text-align: center;
     cursor:pointer;
 }
+.backcolor,.backcolor tr, .backcolor td{
+    background-color: #FFFFFF;
+    margin:0px;
+}
+body{
+    background-color: #FFFFFF;
+}
+hr{
+    padding: 0px;
+    margin: 0px; 
+}
