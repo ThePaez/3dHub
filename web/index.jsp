@@ -21,10 +21,11 @@
                     <p>Sign up for an account and start buying and selling your designs 
                         and/or 3Dprinter time</p>
                 </td>
-                <td width="50%" id="Login">
-                    <form>
+                <td width="50%" id="SignUp">
+                    <form id="SignUpForm" action="signup" onsubmit="return cr();" method="POST">
                         <span id="tips" class="SignUpForm">All form fields are required.</span>
                         <fieldset>
+                            <input name="CR" type="hidden" id="CR">
                             <table width="100%">
                                 <tr><td class="mainTheme">
                                         <label for="Username" class="SignUpForm">Username: </label>
@@ -34,12 +35,12 @@
                                         <input type="text" name="Email" id="Email" class="text ui-widget-content ui-corner-all" />
                                     </td></tr><tr><td class="mainTheme">
                                         <label for="Password" class="SignUpForm">Password: </label>
-                                        <input type="text" name="Password" id="Password" class="text ui-widget-content ui-corner-all" />
+                                        <input type="password" name="Password" id="Password" class="text ui-widget-content ui-corner-all" />
                                     </td></tr><tr><td class="mainTheme">
                                         <label for="CPassword" class="SignUpForm">Confirm Password: </label>
-                                        <input type="text" name="CPassword" id="CPassword" class="text ui-widget-content ui-corner-all" />
+                                        <input type="password" id="CPassword" class="text ui-widget-content ui-corner-all" />
                                     </td></tr><tr><td class="greenParts" style="text-align: right">
-                                        <button class="UpperButtons" onclick="valNewUser()">Sign Up</button>
+                                        <button id="SignUpButton" type="submit">Sign Up</button>
                                     </td></tr>
                             </table>
                         </fieldset>
